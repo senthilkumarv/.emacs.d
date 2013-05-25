@@ -5,7 +5,8 @@
      haskell-mode
      scala-mode2
      auto-complete
-     popup)))
+     popup
+     flycheck)))
 
 (condition-case nil
     (init--additional-install-packages)
