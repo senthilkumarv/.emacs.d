@@ -17,8 +17,9 @@
 (setq interprogram-paste-function 'mac-copy)
 
 ;; Modifier keys
-(setq mac-command-modifier 'hyper)
-(setq ns-function-modifier 'super)
+(setq mac-command-modifier 'super)
+(setq ns-function-modifier 'hyper)
+(setq mac-option-modifier 'meta)
 
 ;; Customizations
 (when (not window-system)
