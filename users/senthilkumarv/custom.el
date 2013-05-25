@@ -2,6 +2,13 @@
 (global-linum-mode)
 ;; Added to introduce space after line number in linum-mode
 (setq linum-format "%d ")
+
+;; JS2-mode indendations
+(custom-set-variables
+ '(js2-basic-offset 2)
+ '(js2-bounce-indent-p t)
+)
+
 ;;Pasteboard integration
 (defun mac-copy ()
   (shell-command-to-string "pbpaste"))
