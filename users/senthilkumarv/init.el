@@ -7,7 +7,6 @@
      auto-complete
      popup)))
 
-
 (condition-case nil
     (init--additional-install-packages)
   (error
@@ -15,3 +14,4 @@
    (init--additional-install-packages)))
 
 (require 'my-key-bindings)
+(require 'setup-modes)
