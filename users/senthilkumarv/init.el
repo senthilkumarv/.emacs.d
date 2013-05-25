@@ -15,3 +15,4 @@
 
 (require 'my-key-bindings)
 (require 'setup-modes)
+(require 'setup-mail-client)
