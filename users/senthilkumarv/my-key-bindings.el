@@ -21,6 +21,6 @@
 (define-key input-decode-map "\e\eOC" [(meta right)])
 
 ;; FFIP
-;;(global-set-key (kbd "C-x C-o sc") (ffip-create-pattern-file-finder "*.scala"))
+(global-set-key (kbd "C-x C-o sc") (ffip-create-pattern-file-finder "*.scala"))
 
 (provide 'my-key-bindings)
