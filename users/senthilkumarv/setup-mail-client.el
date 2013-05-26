@@ -27,4 +27,7 @@
       smtpmail-smtp-service 587
       smtpmail-debug-info t)
 
+;; need this to convert some e-mails properly
+(setq mu4e-html2text-command "html2text -utf8 -width 72")
+
 (provide 'setup-mail-client)
