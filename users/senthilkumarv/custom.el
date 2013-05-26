@@ -75,3 +75,10 @@
  '(visual-line-mode nil t)
  '(js2-basic-offset 2)
  '(js2-bounce-indent-p t))
+
+;; Font overrides
+;; mac friendly font
+(when window-system
+  (setq magnars/default-font "-apple-Monaco-medium-normal-normal-*-14-*-*-*-m-0-iso10646-1")
+  (setq magnars/presentation-font "-apple-Monaco-medium-normal-normal-*-18-*-*-*-m-0-iso10646-1")
+  (set-face-attribute 'default nil :font magnars/default-font))
