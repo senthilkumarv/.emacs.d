@@ -23,4 +23,10 @@
 ;; FFIP
 (global-set-key (kbd "C-x C-o sc") (ffip-create-pattern-file-finder "*.scala"))
 
+;; Disable arrow keys
+(global-unset-key (kbd "<left>"))
+(global-unset-key (kbd "<right>"))
+(global-unset-key (kbd "<up>"))
+(global-unset-key (kbd "<down>"))
+
 (provide 'my-key-bindings)
