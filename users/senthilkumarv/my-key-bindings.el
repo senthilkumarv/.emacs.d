@@ -29,4 +29,7 @@
 (global-unset-key (kbd "<up>"))
 (global-unset-key (kbd "<down>"))
 
+;; Speedbar
+(global-set-key [f8] 'sr-speedbar-toggle)
+
 (provide 'my-key-bindings)

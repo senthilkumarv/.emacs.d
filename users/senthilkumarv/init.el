@@ -7,7 +7,8 @@
      auto-complete
      popup
      flycheck
-     color-theme)))
+     color-theme
+     sr-speedbar)))
 
 (condition-case nil
     (init--additional-install-packages)
@@ -18,6 +19,7 @@
 (require 'my-key-bindings)
 (require 'setup-modes)
 (require 'setup-mail-client)
+(require 'setup-speedbar)
 (require 'color-theme)
 (require 'sweyla852454)
 (color-theme-initialize)
