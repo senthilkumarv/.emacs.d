@@ -11,7 +11,7 @@
       (cursor-color . "#FFFFFF")
       (mouse-color . "#323232"))
      (mode-line ((t (:foreground "#FFFFFF" :background "#323232"))))
-     (region ((t (:background "#323232"))))
+     (region ((T (:Background "#D4F6DF"))))
 
      (font-lock-comment-face ((t (:foreground "#6CFFC5"))))
      (font-lock-constant-face ((t (:foreground "#D4E5FF"))))
