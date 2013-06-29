@@ -16,6 +16,15 @@
    (package-refresh-contents)
    (init--additional-install-packages)))
 
+(setq ffip-find-options
+      (ffip--create-exclude-find-options
+       '("build")))
+
+(add-to-list 'ffip-patterns "*.tpl")
+(add-to-list 'ffip-patterns "*.json")
+(add-to-list 'ffip-patterns "*.scala")
+(add-to-list 'ffip-patterns "Rakefile")
+
 (require 'my-key-bindings)
 (require 'setup-modes)
 (require 'setup-mail-client)

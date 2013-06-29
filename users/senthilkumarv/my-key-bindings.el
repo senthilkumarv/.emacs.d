@@ -22,6 +22,8 @@
 
 ;; FFIP
 (global-set-key (kbd "C-x C-o sc") (ffip-create-pattern-file-finder "*.scala"))
+(global-set-key (kbd "C-x C-o tpl") (ffip-create-pattern-file-finder "*.tpl"))
+(global-set-key (kbd "C-x C-o on") (ffip-create-pattern-file-finder "*.json"))
 
 ;; Disable arrow keys
 (global-unset-key (kbd "<left>"))
