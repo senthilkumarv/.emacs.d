@@ -20,12 +20,7 @@
       (ffip--create-exclude-find-options
        '("Build")))
 
-(add-to-list 'ffip-patterns "*.m")
-(add-to-list 'ffip-patterns "*.h")
-(add-to-list 'ffip-patterns "*.tpl")
-(add-to-list 'ffip-patterns "*.json")
-(add-to-list 'ffip-patterns "*.scala")
-(add-to-list 'ffip-patterns "Rakefile")
+(setq ffip-patterns (append ffip-patterns '("*.m" "*.h" "*.tpl" "*.json" "*.scala" "Rakefile" "Podfile")))
 
 (require 'my-key-bindings)
 (require 'setup-modes)
