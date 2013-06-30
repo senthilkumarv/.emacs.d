@@ -18,8 +18,10 @@
 
 (setq ffip-find-options
       (ffip--create-exclude-find-options
-       '("build")))
+       '("Build")))
 
+(add-to-list 'ffip-patterns "*.m")
+(add-to-list 'ffip-patterns "*.h")
 (add-to-list 'ffip-patterns "*.tpl")
 (add-to-list 'ffip-patterns "*.json")
 (add-to-list 'ffip-patterns "*.scala")
