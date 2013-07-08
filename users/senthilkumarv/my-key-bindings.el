@@ -34,4 +34,9 @@
 ;; Speedbar
 (global-set-key [f8] 'sr-speedbar-toggle)
 
+;; Yank History
+(global-set-key "\C-cy" '(lambda ()
+                           (interactive)
+                           (popup-menu 'yank-menu)))
+
 (provide 'my-key-bindings)
