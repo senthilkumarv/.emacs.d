@@ -8,7 +8,9 @@
      popup
      flycheck
      color-theme
-     sr-speedbar)))
+     sr-speedbar
+     go-mode
+     go-autocomplete)))
 
 (condition-case nil
     (init--additional-install-packages)
@@ -20,7 +22,7 @@
       (ffip--create-exclude-find-options
        '("Build")))
 
-(setq ffip-patterns (append ffip-patterns '("*.m" "*.h" "*.tpl" "*.json" "*.scala" "Rakefile" "Podfile")))
+(setq ffip-patterns (append ffip-patterns '("*.m" "*.h" "*.tpl" "*.json" "*.scala" "Rakefile" "Podfile" "*.java" "*.go")))
 
 (require 'my-key-bindings)
 (require 'setup-modes)
