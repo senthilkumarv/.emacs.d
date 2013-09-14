@@ -56,12 +56,20 @@
    '(magit
      paredit
      move-text
+     god-mode
      gist
      htmlize
      visual-regexp
+     flycheck
+     flx
+     flx-ido
+     css-eldoc
+     yasnippet
      smartparens
      ido-vertical-mode
+     ido-at-point
      simple-httpd
+     guide-key
      nodejs-repl
      restclient
      highlight-escape-sequences
@@ -85,6 +93,18 @@
 (when is-mac
   (require-package 'exec-path-from-shell)
   (exec-path-from-shell-initialize))
+
+;; guide-key
+(require 'guide-key)
+(setq guide-key/guide-key-sequence '("C-x r" "C-x 4" "C-x v" "C-x 8"))
+(guide-key-mode 1)
+(setq guide-key/highlight-command-regexp "bookmark")
+(setq guide-key/recursive-key-sequence-flag t)
+(setq guide-key/popup-window-position 'bottom)
+
+;; god-mode
+(require 'god-mode)
+(global-set-key (kbd "<escape>") 'god-local-mode)
 
 ;; Setup extensions
 (eval-after-load 'ido '(require 'setup-ido))
@@ -141,8 +161,6 @@
     (load file)))
 
 (require 'expand-region)
-(require 'mark-more-like-this)
-(require 'inline-string-rectangle)
 (require 'multiple-cursors)
 (require 'delsel)
 (require 'jump-char)

@@ -15,7 +15,12 @@ that are best handled by the package manager.
 
 ## Install emacs on mac
 
-I use [Emacs For Mac OS X](http://emacsformacosx.com).
+I use Cocoa Emacs, installed like this:
+
+    brew install emacs --cocoa
+
+To open it with Alfred or Quicksilver, you have to copy `Emacs.app` into
+`/Applications` instead of the symlink that brew places there.
 
 ## Tips for using these emacs settings
 
@@ -23,7 +28,7 @@ If you want to use my settings straight out of the box, here are some things to 
 
  * I recommend starting with a blank emacs +
    [Technomancy's better-defaults package](https://github.com/technomancy/better-defaults),
-   and then dig through this repo for useful nuggets.
+   and then dig through this repo for useful nuggets, instead of forking it directly.
 
  * The key bindings are optimized for a norwegian keyboard layout.
 
@@ -118,7 +123,7 @@ overview of the most commonly used shortcuts to get you through this pain:
 ### Navigation
 
 * `C-arrow` Move past words/paragraphs
-* `C-a    ` Go to indentation, then start of line
+* `C-a    ` Go to start of line
 * `C-e    ` Go to end of line
 * `M-g M-g` Go to line number
 * `C-x C-i` Go to symbol

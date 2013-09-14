@@ -7,21 +7,12 @@
 [submodule "site-lisp/jade-mode"]
         path = site-lisp/jade-mode
         url = https://github.com/brianc/jade-mode
-[submodule "site-lisp/coffee-mode"]
-        path = site-lisp/coffee-mode
-        url = https://github.com/defunkt/coffee-mode
-[submodule "site-lisp/mark-multiple"]
-        path = site-lisp/mark-multiple
-        url = https://github.com/magnars/mark-multiple.el.git
 [submodule "site-lisp/ace-jump-mode"]
         path = site-lisp/ace-jump-mode
         url = https://github.com/winterTTr/ace-jump-mode.git
 [submodule "site-lisp/buster-snippets"]
         path = site-lisp/buster-snippets
         url = https://github.com/magnars/buster-snippets.el.git
-[submodule "site-lisp/yasnippet"]
-        path = site-lisp/yasnippet
-        url = https://github.com/capitaomorte/yasnippet.git
 [submodule "site-lisp/expand-region"]
         path = site-lisp/expand-region
         url = https://github.com/magnars/expand-region.el.git
@@ -82,12 +73,6 @@
 [submodule "site-lisp/buster-mode"]
         path = site-lisp/buster-mode
         url = https://github.com/magnars/buster-mode.git
-[submodule "site-lisp/ruby-end"]
-        path = site-lisp/ruby-end
-        url = https://github.com/rejeep/ruby-end.git
-[submodule "site-lisp/zencoding"]
-        path = site-lisp/zencoding
-        url = https://github.com/rooney/zencoding.git
 [submodule "site-lisp/change-inner"]
         path = site-lisp/change-inner
         url = https://github.com/magnars/change-inner.el.git
@@ -127,12 +112,12 @@
 [submodule "site-lisp/flx"]
         path = site-lisp/flx
         url = https://github.com/lewang/flx.git
-[submodule "site-lisp/flycheck"]
-        path = site-lisp/flycheck
-        url = https://github.com/lunaryorn/flycheck.git
 [submodule "site-lisp/nrepl-inspect"]
         path = site-lisp/nrepl-inspect
         url = https://github.com/vitalreactor/nrepl-inspect.git
+[submodule "site-lisp/flycheck"]
+        path = site-lisp/flycheck
+        url = https://github.com/lunaryorn/flycheck.git
 [submodule "site-lisp/datomic-snippets"]
         path = site-lisp/datomic-snippets
         url = https://github.com/magnars/datomic-snippets.git
