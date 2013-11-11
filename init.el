@@ -73,12 +73,14 @@
      nodejs-repl
      restclient
      highlight-escape-sequences
+     whitespace-cleanup-mode
      elisp-slime-nav
      git-commit-mode
      gitconfig-mode
      gitignore-mode
      clojure-mode
-     nrepl)))
+     cider
+     cider-tracing)))
 
 (condition-case nil
     (init--install-packages)
@@ -96,9 +98,8 @@
 
 ;; guide-key
 (require 'guide-key)
-(setq guide-key/guide-key-sequence '("C-x r" "C-x 4" "C-x v" "C-x 8"))
+(setq guide-key/guide-key-sequence '("C-x r" "C-x 4" "C-x v" "C-x 8" "C-x +"))
 (guide-key-mode 1)
-(setq guide-key/highlight-command-regexp "bookmark")
 (setq guide-key/recursive-key-sequence-flag t)
 (setq guide-key/popup-window-position 'bottom)
 
@@ -120,12 +121,16 @@
 (require 'setup-html-mode)
 (require 'setup-paredit)
 
+;; Font lock dash.el
+(eval-after-load "dash" '(dash-enable-font-lock))
+
 ;; Default setup of smartparens
 (require 'smartparens-config)
 (setq sp-autoescape-string-quote nil)
 (--each '(css-mode-hook
           restclient-mode-hook
           js-mode-hook
+          ruby-mode
           markdown-mode)
   (add-hook it 'turn-on-smartparens-mode))
 
