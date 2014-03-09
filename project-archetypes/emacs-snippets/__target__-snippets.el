@@ -61,7 +61,11 @@
   (let ((snip-dir (expand-file-name "snippets" __target__-snippets-root)))
     (when (boundp 'yas-snippet-dirs)
       (add-to-list 'yas-snippet-dirs snip-dir t))
+<<<<<<< HEAD
+    (yas/load-directory snip-dir)))
+=======
     (yas-load-directory snip-dir)))
+>>>>>>> magnars-master
 
 ;;;###autoload
 (eval-after-load "yasnippet"

@@ -110,4 +110,8 @@
 ;;  - https://github.com/overtone/emacs-live/blob/master/packs/dev/clojure-pack/config/paredit-conf.el
 
 
+;; Setup nrepl-inspect
+(require 'nrepl-inspect)
+(define-key nrepl-mode-map (kbd "C-c C-i") 'nrepl-inspect)
+
 (provide 'setup-clojure-mode)
