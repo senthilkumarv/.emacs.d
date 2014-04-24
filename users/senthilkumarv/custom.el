@@ -39,7 +39,7 @@
       (border-color . "white")
       (cursor-color . "yellow")
       (foreground-color . "white")
-      (mouse-color . "white"))))))
+      (mouse-color . "white")))))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
