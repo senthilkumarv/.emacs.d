@@ -29,6 +29,9 @@
 (require 'setup-mail-client)
 (require 'setup-speedbar)
 (require 'color-theme)
-(require 'sweyla852454)
-(color-theme-initialize)
-(sweyla852454)
+
+(when window-system
+  (require 'sweyla852454)
+  (color-theme-initialize)
+  (sweyla852454))
+
