@@ -5,7 +5,7 @@
 (defcustom js2r-path-to-tests "/test/"
   "Path to tests from a root shared with sources")
 
-(defcustom js2r-path-to-sources "/app/"
+(defvar js2r-path-to-sources "/src/"
   "Path to sources from a root shared with tests")
 
 (defcustom js2r-test-suffix "-test"
